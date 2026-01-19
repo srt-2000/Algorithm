@@ -1,8 +1,5 @@
 # Algorithms Collection
 
-[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-
 > Interactive collection of algorithms from "Grokking Algorithms" book with CLI interface
 
 ## 📋 Description
@@ -204,14 +201,6 @@ The project includes ready test data in the `data/` folder:
 - Statistical data for ML algorithms
 - Cryptographic parameters
 
-## 🏗 Architecture
-
-### Main Components
-
-1. **`main.py`** - CLI interface based on Click
-2. **`src/`** - Algorithm implementation modules
-3. **`data/`** - JSON files with test data
-
 ## 🧪 Usage Examples
 
 ### Binary Search
@@ -238,10 +227,6 @@ We have a graph with different paths to get our point:
 I've used the DSA Dijkstra's Algorithm and found our minimal trip
 ['start', 'b', 'a', 'fin']
 ```
-
-## 📝 License
-
-This project is distributed under the MIT License. See `LICENSE` file for details.
 
 ## 👨‍💻 Author
 
