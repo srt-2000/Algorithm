@@ -9,7 +9,11 @@
 
 This project is a CLI application that demonstrates various algorithms described in the "Grokking Algorithms" book. 
 Each algorithm is implemented as a separate command with an interactive interface.
+
+##
 This project helps us understand how various algorithms work using Python code and visualize their output. 
+
+##
 No running time benchmarks were created to compare different methods, 
 as the main goal of the project is to translate the examples described in the book into Python code.
 
@@ -207,13 +211,6 @@ The project includes ready test data in the `data/` folder:
 1. **`main.py`** - CLI interface based on Click
 2. **`src/`** - Algorithm implementation modules
 3. **`data/`** - JSON files with test data
-
-### Design Principles
-
-- **Modularity**: each algorithm in separate module
-- **Interactivity**: detailed prompts and validation
-- **Type Safety**: using type hints
-- **Documentation**: docstrings for all functions
 
 ## 🧪 Usage Examples
 
