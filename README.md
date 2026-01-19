@@ -7,15 +7,11 @@
 
 ## 📋 Description
 
-This project is a CLI application that demonstrates various algorithms described in the "Grokking Algorithms" book. Each algorithm is implemented as a separate command with an interactive interface.
-
-## 🚀 Features
-
-- **20+ algorithms** from classical algorithm literature
-- **Interactive CLI** with detailed prompts
-- **Ready test data** for each algorithm
-- **Modern architecture** using Click framework
-- **Comprehensive documentation** for each algorithm
+This project is a CLI application that demonstrates various algorithms described in the "Grokking Algorithms" book. 
+Each algorithm is implemented as a separate command with an interactive interface.
+This project helps us understand how various algorithms work using Python code and visualize their output. 
+No running time benchmarks were created to compare different methods, 
+as the main goal of the project is to translate the examples described in the book into Python code.
 
 ## 📁 Project Structure
 
@@ -257,9 +253,6 @@ This project is distributed under the MIT License. See `LICENSE` file for detail
 ## 🙏 Acknowledgments
 
 - "Grokking Algorithms" book by Aditya Bhargava
-- Python community for excellent tools
-- All project contributors
-
 ---
 
 ⭐ If the project was helpful, give it a star!
