@@ -1,217 +1,265 @@
-#**Algorithms**
+# Algorithms Collection
 
-##author srt-2000
+[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
+> Interactive collection of algorithms from "Grokking Algorithms" book with CLI interface
 
-##Introduction
+## 📋 Description
 
-    This is a CLI app.
-    It shows a results of working
-    an algorithms described in a book "Grokking Algorithms".
+This project is a CLI application that demonstrates various algorithms described in the "Grokking Algorithms" book. Each algorithm is implemented as a separate command with an interactive interface.
 
+## 🚀 Features
 
-##Content
-
-    - data - repository with data files used as stdin data
-    - src - repository with python modules, as ussual it's a Class code
-    - main.py - main code with click commands
-
-
-##Requirements
-
-It made with PYTHON 3.12
-
-For using this app you need install python packages:
-
-    bitarray==3.0.0
-    click==8.1.7
-    contourpy==1.3.0
-    cycler==0.12.1
-    fonttools==4.54.1
-    kiwisolver==1.4.7
-    matplotlib==3.9.2
-    numpy==2.1.2
-    packaging==24.1
-    pillow==11.0.0
-    pyparsing==3.2.0
-    PyQt6==6.7.1
-    PyQt6-Qt6==6.7.3
-    PyQt6_sip==13.8.0
-    python-dateutil==2.9.0.post0
-    scipy==1.14.1
-    six==1.16.0
-
-
-##Installation
-
-To install - you have copy this repo and create .venv with requirement packages.
-
-
-##Using
-
-###START in terminal:
-
-            When you are inside your project and venv try command:
-
-                ~/xx/xx$: python main.py [name of command (see 'the main commands')]
-
-            or try help command to read all commands in terminal
-
-                ~/xx/xx$: python main.py --help
-
-    
-###The main commands:
-
-      bf   Bloom filter algorithm
-            It's show how works a Bloom filter for negative IP address.
-
-            No options or arguments for this command.
-
-
-      bs   binary search algorithm
-            It's shows how binary search works - to find our char index.
-
-            Options:
-
-                --mx   
-                INTEGER  You have to enter max value of list
-
-                --find 
-                INTEGER  You have to enter the value what index you want to find
-
-
-      bt   binary tree parsing
-            It show a result of different types of parsing for binary tree.
-
-            Options:
-
-                --ptype 
-                use only [pre|post|in]  
-                You have to enter max the parsing type, choose pre, post or in.
-
-
-      cr   Countdown function with recursion
-            Shows a countdown result used recursion algorithm.
-
-            Options:
-
-                --rng 
-                INTEGER  You have to enter maximum value of countdown range
-
-
-      dc   Dynamic programming algorithm
-            It's presents solution for select the most expensive things into the backpack. 
- 
-            No options or arguments for this command.
-
-
-      dh   Diffie–Hellman algorithm
-            Shows how works classic encryption algorithm.
-
-            Options:
-
-              --p 
-              INTEGER  You have to input a number = public key P
-
-              --g 
-              INTEGER  You have to input a number = public key G
-
-
-      dk   Dijkstra algorithm
-            We are using the DSA Dijkstra's Algorithm to find our minimal trip.
-
-            No options or arguments for this command.
-
-
-      fc   Factorial calculating function with recursion
-    
-            Options:
-
-             --fn 
-             INTEGER  You have to enter the number for factorial calculating.
-
-
-      fr   Fourier transform
-            We are filtering and normalising the signal.
-            It shows interesting figures.
-
-            No options or arguments for this command.        
-
-
-      gr   Greedy algorithm
-            We are solving a hard task to fin the path for postman.
-
-            No options or arguments for this command.  
-
-
-      ht1  Hash tables version 1
-            It presents a check voters process.
-
-            Options:
-             --qnt 
-             INTEGER  You have input a planned quantity of voters.
-
-
-      ht2  Hash tables version 2
-            It's presents like test for cash.
-            Input urls from given list and see from where you have a response.
-
-            No options or arguments for this command. 
-
-
-      ih   Inverted index algorithm
-            It finds all pages with inputed word.
-
-            Options:
-             --word 
-             only [hi|there|adit|we|go]  
-             Input word from phrases and fin the pages
-
-
-      mm   Array multiplicative function
-            It multiplicate inputed array with itself.
-            You have to input array in line, and separat numbers by space.
-
-            No options or arguments for this command. 
-
-
-      mp   Map function
-            Shows how map function works.
-
-            No options or arguments for this command. 
-
-
-      nn   Nearest neighbours algorithm
-            Presents some prediction for sales using NN algorithm.
-
-            No options or arguments for this command. 
-
-
-      qsr  Sorting function with recursion
-            Simple sorting.
-
-            No options or arguments for this command. 
-
-
-      rc   Reduce function
-            A functools.reduce function.
-
-            No options or arguments for this command. 
-
-
-      sm   Sum function with recursion
-            Sum all elements in the list.
-            You have to input array in line, and separat numbers by space.
-
-            No options or arguments for this command. 
-
-      ws   Width search algorithm
-             Find a mango-seller (name has '-m' at tne end) in friends circle.
-
-            Options:
-
-            --name 
-            only [Viva|Max|Demon|Leo|Alex|Denis|Dima|Ann|Andrey|you]
-            Enter the name you want to check
-
-##Thanks for your attention.
+- **20+ algorithms** from classical algorithm literature
+- **Interactive CLI** with detailed prompts
+- **Ready test data** for each algorithm
+- **Modern architecture** using Click framework
+- **Comprehensive documentation** for each algorithm
+
+## 📁 Project Structure
+
+```
+Algorithm/
+├── data/                    # Test data in JSON format
+│   ├── 5_2_data.json
+│   ├── 6_1_data.json
+│   └── ...
+├── src/                     # Algorithm implementations
+│   ├── binary_search.py    # Binary search
+│   ├── dijkstra.py         # Dijkstra's algorithm
+│   ├── dynamic.py          # Dynamic programming
+│   └── ...
+├── main.py                 # CLI interface
+├── pyproject.toml         # Poetry configuration
+└── requirements.txt       # Dependencies
+```
+
+## 🛠 Installation
+
+### Requirements
+- Python 3.12+
+- Poetry (recommended) or pip
+
+### Installation via Poetry (recommended)
+
+```bash
+# Clone repository
+git clone <repository-url>
+cd Algorithm
+
+# Install dependencies
+poetry install
+
+# Activate virtual environment
+poetry shell
+```
+
+### Installation via pip
+
+```bash
+# Clone repository
+git clone <repository-url>
+cd Algorithm
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# or
+venv\Scripts\activate  # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## 🎯 Usage
+
+### Basic Commands
+
+```bash
+# Show all available commands
+python main.py --help
+
+# Run specific algorithm
+python main.py <command_name>
+```
+
+### 📚 Available Algorithms
+
+#### 🔍 Search and Sorting
+- **`bs`** - Binary Search
+  ```bash
+  python main.py bs --mx 100 --find 42
+  ```
+
+- **`qsr`** - Quick Sort
+  ```bash
+  python main.py qsr
+  ```
+
+#### 🌳 Trees and Graphs
+- **`bt`** - Binary Tree Traversal
+  ```bash
+  python main.py bt --ptype pre  # pre|post|in
+  ```
+
+- **`dk`** - Dijkstra's Algorithm
+  ```bash
+  python main.py dk
+  ```
+
+- **`ws`** - Breadth-First Search (BFS)
+  ```bash
+  python main.py ws --name Alex
+  ```
+
+#### 🧮 Dynamic Programming
+- **`dc`** - Knapsack Problem
+  ```bash
+  python main.py dc
+  ```
+
+#### 🔐 Cryptography
+- **`dh`** - Diffie-Hellman Protocol
+  ```bash
+  python main.py dh --p 23 --g 5
+  ```
+
+- **`bf`** - Bloom Filter
+  ```bash
+  python main.py bf
+  ```
+
+#### 🎯 Machine Learning
+- **`nn`** - k-Nearest Neighbors Algorithm
+  ```bash
+  python main.py nn
+  ```
+
+#### 📊 Data Processing
+- **`fr`** - Fourier Transform
+  ```bash
+  python main.py fr
+  ```
+
+- **`ih`** - Inverted Index
+  ```bash
+  python main.py ih --word "algorithm"
+  ```
+
+#### 🗂 Hash Tables
+- **`ht1`** - Voting System
+  ```bash
+  python main.py ht1 --qnt 5
+  ```
+
+- **`ht2`** - URL Caching
+  ```bash
+  python main.py ht2
+  ```
+
+#### 🔄 Recursion
+- **`cr`** - Countdown
+  ```bash
+  python main.py cr --rng 10
+  ```
+
+- **`fc`** - Factorial Calculation
+  ```bash
+  python main.py fc --fn 5
+  ```
+
+- **`sm`** - Array Sum
+  ```bash
+  python main.py sm
+  ```
+
+#### 🧮 Functional Programming
+- **`mp`** - Map Function
+  ```bash
+  python main.py mp
+  ```
+
+- **`rc`** - Reduce Function
+  ```bash
+  python main.py rc
+  ```
+
+- **`mm`** - Matrix Multiplication
+  ```bash
+  python main.py mm
+  ```
+
+#### 🎯 Greedy Algorithms
+- **`gr`** - Postman Problem
+  ```bash
+  python main.py gr
+  ```
+
+## 📊 Test Data
+
+The project includes ready test data in the `data/` folder:
+- Graphs for pathfinding algorithms
+- Arrays for sorting and searching
+- Statistical data for ML algorithms
+- Cryptographic parameters
+
+## 🏗 Architecture
+
+### Main Components
+
+1. **`main.py`** - CLI interface based on Click
+2. **`src/`** - Algorithm implementation modules
+3. **`data/`** - JSON files with test data
+
+### Design Principles
+
+- **Modularity**: each algorithm in separate module
+- **Interactivity**: detailed prompts and validation
+- **Type Safety**: using type hints
+- **Documentation**: docstrings for all functions
+
+## 🧪 Usage Examples
+
+### Binary Search
+```bash
+$ python main.py bs
+Hello!
+I'm the binary search algorithm
+I'll find the index of item you want very fast
+
+Enter the maximum number of sorted array: 100
+Enter the digit we want to find: 42
+
+We have a sorted list from 0 to 100
+FIND!!!
+42 is position of 42
+```
+
+### Dijkstra's Algorithm
+```bash
+$ python main.py dk
+We have a graph with different paths to get our point:
+{'start': {'a': 6, 'b': 2}, 'a': {'fin': 1}, 'b': {'a': 3, 'fin': 5}, 'fin': {}}
+
+I've used the DSA Dijkstra's Algorithm and found our minimal trip
+['start', 'b', 'a', 'fin']
+```
+
+## 📝 License
+
+This project is distributed under the MIT License. See `LICENSE` file for details.
+
+## 👨‍💻 Author
+
+**srt-2000** - [srt2000888@gmail.ru](mailto:srt2000888@gmail.ru)
+
+## 🙏 Acknowledgments
+
+- "Grokking Algorithms" book by Aditya Bhargava
+- Python community for excellent tools
+- All project contributors
+
+---
+
+⭐ If the project was helpful, give it a star!
