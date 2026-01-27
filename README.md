@@ -8,7 +8,12 @@ This project is a CLI application that demonstrates various algorithms described
 Each algorithm is implemented as a separate command with an interactive interface.
 
 ##
-This project helps us understand how various algorithms work using Python code and visualize their output. 
+This project helps us understand how various algorithms work using Python code and visualize their output.
+You can use it as 'study code'. 
+
+1. Look into code.
+2. Think about - How does it work.
+3. Try to make result with CLI app.
 
 ##
 No running time benchmarks were created to compare different methods, 
